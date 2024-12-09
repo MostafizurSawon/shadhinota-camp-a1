@@ -197,10 +197,11 @@
     }
 
 .main-card{
-  /* padding: 80px; */
+  padding-top: 56px;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   justify-content: center;
+  align-items: center;
   gap: 24px;
 }
 
@@ -234,13 +235,24 @@
   border-radius: 20px; 
   display: inline-block;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag > img{
+  margin-right: 8px;
 }
 
 .card-content {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 60% 40%;
   padding-bottom: 5px;
   border-bottom: 1px solid lightgray;
+}
+
+.card-first{
+  padding: 8px 0;
 }
 
   .location{
@@ -250,7 +262,8 @@
   }
 
     .card-description{
-      font-size: 11px;
+      font-size: 10px;
+      color: #70707B;
     }
 
   .card-second{
@@ -262,4 +275,281 @@
 
 .card-footer{
   padding-top: 8px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 8 px;
+  justify-content: center;
+  align-items: center;
+}
+
+  .bathroom, .bedroom, .area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    
+  }
+
+  .bedroom{
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-right-style: ;
+  }
+
+  .footer-text{
+    color: #70707B;
+  }
+
+.more{
+  margin-top: 50px;
+  width: 128px;
+  cursor: pointer;
+}
+
+/* property listing ends */
+
+
+/* Frequently asked question */
+
+.frequent{
+  padding: 80px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+
+}
+  .fre-title{
+    font-size: 56px;
+    font-weight: 400;
+  }
+
+  .fre-description{
+    margin: 15px 0 56px 0;
+    color: #70707B;
+  }
+
+  .fre-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 16px;
+    color: #70707B;
+  }
+
+.fre-two{
+  background-color: #FAFAFA;
+}
+
+  .fre-ex{
+    color : #18181B;
+    font-weight: 700;
+  }
+
+  .fre-des{
+    color: #18181B;
+    font-weight: 400;
+    padding: 16px;
+  }
+
+
+  /* Real Estate tips and insights */
+  .tips{
+    margin-top: 20px;
+    padding: 80px;
+  }
+
+    .tips-head{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      align-items: center;
+    }
+
+    .tips-body{
+      margin: 25px 8px;
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .tips-card{
+      height: 531px;
+    }
+
+    .tips-card > img{
+      width: 100%;
+      
+    }
+
+    .tips-des{
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      color: #70707B;
+      margin: 8px 0;
+    }
+
+    .tips-clock{
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+    }
+
+    .clock{
+      margin-left: 5px;
+    }
+
+    .tips-card > p{
+      font-size: 24px;
+    }
+
+    .tips-footer{
+      /* margin: 10px 0; */
+      display: grid;
+      grid-template-columns: 50% 50%;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+      .ellipse, .next{
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        
+      }
+
+      .tips-footer img{
+        cursor: pointer;
+      }
+
+      .next{
+        justify-content: end;
+      }
+
+
+/* contact section */
+.contact-section{
+  /* margin-top: 20px; */
+  background-image: url("./../images/back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px;
+  border-radius: 26px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+  .contact-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-card{
+    padding: 35px;
+  }
+
+  .contact-title{
+    font-size: 50px;
+    color: #FCFCFC;
+    
+  }
+
+  .contact-card > p{
+    margin-top: 12px;
+    color: #FCFCFC;
+  }
+
+  .contact-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-two-card{
+    padding: 24px;
+    border-radius: 20px;
+    background-color: #FAFAFA;
+    height: 410px;
+    width: 100%;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+#fname, #email, #description{
+  width: 95%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+.send{
+  width: 100%;
+}
+
+
+
+/* Footer css */
+.footer{
+  margin-top: 30px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  padding: 80px;
+  gap: 16px;
+  
+}
+
+  .footer-one-text{
+    color:#FCFCFC;
+    font-size: 32px;
+    font-weight: 400;
+
+  }
+
+  .footer-one-card{
+    display: grid;
+    grid-template-columns: 20% 20% 40%;
+    gap: 12px;
+
+  }
+
+  .fcard{
+    color: #70707B;
+  }
+
+  .footer-small{
+    padding: 20px 0 10px 0;
+  }
+
+.footer-two{
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 38px;
+}
+
+.navigation, .follow{
+  color: #70707B
+}
+
+.footer-navigation{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 6px;
+}
+
+.home, .faqs{
+  margin-top: 10px;
+  line-height: 1.9;
+}
+
+.home > a{
+  color: #FAFAFA;
+  text-decoration: none;
+}
+.faqs > a{
+  color: #FAFAFA;
+  text-decoration: none;
 }
